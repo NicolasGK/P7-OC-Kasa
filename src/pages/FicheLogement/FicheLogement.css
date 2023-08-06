@@ -1,0 +1,164 @@
+.logement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.ficheLogement {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 43px auto;
+}
+.ficheLogement h1 {
+    color: #ff6060;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 600;
+}
+.ficheLogement h4 {
+    color: #ff6060;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.div_tags {
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+.tags {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+    margin: 10px 20px 0 0;
+    height: 25px;
+    padding: 0 20px;
+    font-size: 14px;
+    background-color: #ff6060;
+    color: #fff;
+    border-radius: 10px;
+}
+.div_etoiles {
+    display: flex;
+    gap: 10px;
+    color: #ff6060;
+    width: 167px;
+}
+.div_etoiles p {
+    display: flex;
+    text-align: right;
+    font-size: 18px;
+    width: 93px;
+    height: 52px;
+    align-items: center;
+}
+.div_etoiles img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.description {
+    width: 100%;
+}
+.stars {
+    display: flex;
+    font-size: 30px;
+    width: 130px;
+    gap: 10px;
+}
+.span1 {
+    color: #ff6060;
+    text-shadow: 0px 0px 5px rgb(180, 166, 166);
+}
+.span2 {
+    color: #E3E3E3;
+}
+.about_main_collapse {
+    gap: 2rem;
+    width: 90%;
+    margin: 43px auto;
+}
+
+@media (max-width: 768px) {
+    .compteurImages { 
+        display: none; 
+    }
+    .main_stars{  
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .ficheLogement, .collapse_logement { 
+        display: block; 
+    }
+    .description { margin-bottom: 30px; }
+    .bloc-stars {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .stars {
+        align-items: center;
+        justify-content: left;
+    }
+    .tags { 
+        font-size: 10px; 
+    }
+    .div_tags { 
+        gap: 10px; 
+    }
+}
+
+@media (max-width: 450px) {
+  .tags { 
+        margin-right: 10px; 
+    }
+  .div_tags { 
+        gap: 0; 
+    }
+  .bloc_stars { 
+        margin-top: 10px; 
+    }
+  .description_content { 
+        font-size: 12px; 
+    }
+  .description_header, .equipements_header {
+      font-size: 13px;
+      padding:  0px ;
+  }
+  .span1, .span2 { font-size: 18px; }
+}
+
+
+@media (max-width: 401px) {
+  .stars { 
+        font-size: 15px; gap: 5px; 
+    }
+  .carrousel_logement img { 
+        height: 255px; 
+    }
+  .description h1 { 
+        font-size: 18px; 
+    }
+  .description h4 { 
+        font-size: 14px; margin: 0; 
+    }
+  .div_etoiles { 
+        align-items: center; 
+    }
+  .div_etoiles img {
+      width: 45px;
+      height: 45px;
+      margin: 0;
+  }
+  .div_etoiles p {
+      display: flex;
+      justify-content: right;
+      font-size: 12px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+  }
+}

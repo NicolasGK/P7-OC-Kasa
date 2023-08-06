@@ -1,0 +1,24 @@
+.gallery {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	gap: 50px;
+	background-color: #F7F7F7;
+	padding: 50px 20px;
+	border-radius: 25px;
+	max-width: 85%;
+	margin: 0 auto;
+}
+ @media screen and (max-width: 1230px) {
+	 .gallery {
+		gap: 25px;
+		padding: 25px 15px;
+	}
+}
+ @media screen and (max-width: 550px) {
+	 .gallery {
+		width: 100%;
+	}
+}
+ 

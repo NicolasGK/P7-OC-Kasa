@@ -1,0 +1,26 @@
+#navbar a.active{
+    text-decoration: underline;
+}
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #ff6060;
+    font-size: 24px;
+    font-size: clamp(12px, 2.5vw, 24px);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 700px){
+    .nav-list{
+        gap: 20px;
+    }
+}
+
+
